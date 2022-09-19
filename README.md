@@ -60,7 +60,7 @@ corpus = corpus.show_values()
 # what is happening here?
 outfile = os.path.join("..", "out", "corpus.json")
 with open(outfile, "w") as f:
-    json.dumps(corpus, f, indent=2)
+    json.dump(corpus, f, indent=2)
 ```
 
 There are a couple of tricky things here that might trip you up. To make things a bit easier, I've provided some scaffolding for the class in [loaders.py](src/loaders.py), with some hints and tips about how to fill the rest in. Do not feel compelled to use this if you don't want to - you might have a neater solution, and you should go with that!
